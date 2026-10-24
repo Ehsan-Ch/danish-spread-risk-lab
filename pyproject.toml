@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "beltline-spread-lab"
+version = "1.0.0"
+description = "Danish bidding-zone spread forecasting and risk calibration"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+[tool.setuptools.packages.find]
+include = ["beltline*"]
+[project.scripts]
+beltline = "beltline.cli:main"
