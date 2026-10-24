@@ -20,7 +20,7 @@ The source period/calendar had been used in an earlier project. This protocol wa
 
 Zero spread won validation and later MAE (3.3155 €/MWh). The selected 80% interval covered 78.87% of replay quarters. Recent frequency won Brier (0.07170). Its pooled ROC AUC was 0.489; it is constant within each monthly fold but differs between folds. It has no within-fold discrimination. Learned alternatives did not improve Brier or MAE. Ridge was especially unstable across regimes.
 
-No model probability reached the fixed 0.60 alert threshold. All 673 event quarters were missed by that alert rule. Low average error mostly reflects small/converged spreads and does not validate an ability to anticipate extremes. The plots and full CSV retain negative spreads and large misses; no favorable subset replaces the full-period comparison. Isotonic calibration can be noisy, especially with rare events and a small, temporally shifted calibration set. No conditional calibration or coverage guarantee is claimed.
+No model probability reached the fixed 0.60 alert threshold. All 673 event quarters were missed by that alert rule. Low average error mostly reflects small/converged spreads and does not validate an ability to anticipate extremes. The selected interval's monthly coverage varied from 77.0% in July to 90.7% in August and 68.6% in September; the aggregate hides substantial temporal variation. The plots and full CSV retain negative spreads and large misses; no favorable subset replaces the full-period comparison. Isotonic calibration can be noisy, especially with rare events and a small, temporally shifted calibration set. No conditional calibration or coverage guarantee is claimed.
 
 ## What is missing
 
